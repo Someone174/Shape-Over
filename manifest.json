@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Shapeover",
+  "version": "1.0.0",
+  "description": "Cover parts of a website with custom shapes and images.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Shapeover",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

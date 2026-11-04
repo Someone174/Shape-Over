@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shapeover</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="brand"><span class="brand-mark" aria-hidden="true">◩</span><div><h1>Shapeover</h1><p>Make any corner of the web yours.</p></div></header>
+    <section class="site-card" aria-live="polite">
+      <div class="site-icon" aria-hidden="true">✳</div>
+      <div class="site-copy"><span class="eyebrow">THIS SITE</span><strong id="site-name">Checking page…</strong><span id="mask-count">Loading your covers</span></div>
+      <span id="status-dot" class="status-dot" aria-label="Status"></span>
+    </section>
+    <button id="edit-button" class="primary" type="button"><span aria-hidden="true">＋</span> Create a cover <kbd>↵</kbd></button>
+    <section class="how"><h2>How it works</h2><ol><li><span>1</span>Choose a shape and draw on the page</li><li><span>2</span>Add an image or keep the color</li><li><span>3</span>Your covers stay with this website</li></ol></section>
+    <footer><span class="footer-sparkle" aria-hidden="true">✦</span>Scroll away. Your cover stays put.</footer>
+    <p id="message" class="message" role="status"></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
